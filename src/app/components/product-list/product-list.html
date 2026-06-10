@@ -1,0 +1,11 @@
+
+<div>
+  <h1>Hello</h1>
+  <ul>
+    @for(p of productData();track p.id){
+
+     <li><a [routerLink]="['details',p.id]">{{p.title}}</a></li>
+    <!-- <li><a [routerLink]="['/user-detail/',user.id]">{{user.name}}</a></li>  -->
+}     
+  </ul>
+</div>
